@@ -1,0 +1,26 @@
+{
+  "traces": [],
+  "train": [],
+  "demos": [],
+  "signature": {
+    "instructions": "You will be given a single input field:\n\n- word: a string containing a word or name\n\nTask:\n- Reverse the exact sequence of characters in the given word.\n- Output only the reversed word, with no extra words, punctuation, spaces, or explanation.\n\nImportant:\n- Preserve every character exactly as it appears in the input, including uppercase/lowercase letters.\n- Do not add, remove, or rearrange any characters except by reversing their order.\n- Do not insert spaces or split the word.\n- Do not normalize spelling or otherwise modify the input.\n- The reversal must be exact and character-by-character; for example, if the input is \"Hedera\", the correct output is \"aredeH\" (not \"Aredah\" or any other altered form).\n\nHow to solve:\n- Read the word from left to right.\n- Write it back from right to left, character by character.\n\nExamples:\n- sun -> nus\n- impoverish -> hsirevopmi\n- Chachapuya -> ayupahcahC\n- thrawcrook -> koorcwarht\n- calculous -> suoluclac\n- cicala -> alacic\n- roquist -> tsiuqor\n- Hedera -> aredeH\n- turbofan -> nafobrut\n\nNote:\n- The word may be a common word, a technical term, a proper name, or a specialized vocabulary item. Reverse the entire string exactly as given, regardless of familiarity or apparent spelling.",
+    "fields": [
+      {
+        "prefix": "Word:",
+        "description": "The word to reverse."
+      },
+      {
+        "prefix": "Reversed Word:",
+        "description": "The word spelled backward."
+      }
+    ]
+  },
+  "lm": null,
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.13",
+      "dspy": "3.2.1",
+      "cloudpickle": "3.1"
+    }
+  }
+}
